@@ -7,8 +7,9 @@ export default class ThemedDecoration  extends  Component {
       className : this.props.theme
     }));
     return (
+
       <div>
-        {this.props.children}
+        {ChildrenWithBonus}
       </div>
     )
   }
