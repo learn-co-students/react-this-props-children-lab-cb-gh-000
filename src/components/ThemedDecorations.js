@@ -6,6 +6,7 @@ export default class ThemedDecoration  extends  Component {
     return (
       <div>
         {this.props.children}
+        React.Chil
       </div>
     )
   }
