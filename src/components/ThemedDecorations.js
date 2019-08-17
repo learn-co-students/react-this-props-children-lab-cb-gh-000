@@ -6,7 +6,11 @@ export default class ThemedDecoration  extends  Component {
     return (
       <div>
         {this.props.children}
-        React.Chil
+        React.Children.map(this.props.children, child => {
+          child.props.className
+        }
+
+        ))
       </div>
     )
   }
