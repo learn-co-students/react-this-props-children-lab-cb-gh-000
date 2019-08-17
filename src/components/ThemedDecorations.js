@@ -2,15 +2,13 @@
 import React, { Component } from "react";
 
 export default class ThemedDecoration  extends  Component {
-  render () {
+    render() {
+    const ChildrenWithBonus = React.Children.map(this.props.children, child => React.cloneElement(child, {
+      className : this.props.theme
+    }));
     return (
       <div>
         {this.props.children}
-        React.Children.map(this.props.children, child => {
-          child.props.className
-        }
-
-        ))
       </div>
     )
   }
